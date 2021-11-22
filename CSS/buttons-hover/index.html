@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Tasks</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+
+        <div class="container">
+
+            <div class="button">
+                <p>Button One</p>
+            </div>
+
+            <div class="button">
+                <p>Button Two</p>
+            </div>
+
+            <div class="button">
+                <p>Button Three</p>
+            </div>
+
+            <div class="button">
+                <p>Button Four</p>
+            </div>
+            <div class="button">
+                <p>Button Five</p>
+            </div>
+
+        </div> <!--container-->
+
+    </body>
+</html>
+
+
+<style>
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.button{
+    width: 120px;
+    height: 100px;
+    max-height: 60px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: font-size 0.25s ease-out 0.0s;
+}
+.button p{
+    text-align: center;
+}
+
+.button:nth-child(even){
+    background: #f1f1f1;
+}
+
+.button:nth-child(odd){
+    background: #f9f9f9;
+}
+
+.button:hover{
+    background: goldenrod;
+    font-size: 1.2em;
+}
+
+
+</style>

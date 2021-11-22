@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container-page{
+    display: grid;
+    grid-gap: 1vw 1vh;
+    margin: 0 auto;
+    width: 90vw;
+}
+
+.container-page > div{ /* selects all divs that are a child of the main class */
+    padding: 1vw;
+    min-width: 20vw;
+}
+
+/* ================================================= */
+/* Banner Area */
+/* ================================================= */
+.banner{
+    background: rgb(235, 79, 79);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: grid;
+    grid-gap: 1vw 1vh;
+}
+
+.banner > div{
+    background: rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.grid-item-1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.grid-item-2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.grid-item-3{
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.grid-item-2 > input:nth-child(1){
+    width: 80%;
+    margin-top: 7px;
+    padding: 2px;
+}
+
+/* ================================================= */
+/* Sidebar Area */
+/* ================================================= */
+.sidebar{
+    background: rgb(235, 199, 79);
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+/* ================================================= */
+/* Main Content Area */
+/* ================================================= */
+.main-content{
+    background: rgb(162, 235, 79);
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.post{
+    background: rgba(0,0,0,0.1);
+    padding: 1vh;
+    margin-bottom: 1vw;
+}
+
+/* ================================================= */
+/* Footer Area */
+/* ================================================= */
+.footer{
+    background: rgb(79, 178, 235);
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+.container-page{
+    margin: 0;
+    width: 100vw;
+    grid-gap: 0;
+}
+
+.banner{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.sidebar{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.main-content{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.footer{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+
+} /* @media 600px */
